@@ -1,0 +1,10 @@
+body {
+    background-color: #fbdc43;
+    color: black;
+}
+
+#searchButton {
+    background-color: #fbdc43;
+    color: black;
+    border: solid 1.5px black;
+}

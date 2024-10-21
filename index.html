@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Fixed Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">RecipeApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#" id="homePage">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="favouritesPage">Favourites</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="ownRecipesPage">My Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="createRecipe">Create Recipe</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Search Panel -->
+<aside class="container mt-5 pt-5">
+    <h3>Search Recipes</h3>
+    <input type="text" id="searchInput" class="form-control" placeholder="Search by keywords">
+    <button class="btn btn-primary mt-2" id="searchButton">Search</button>
+
+    <h5 class="mt-4">Filters</h5>
+    <label for="calories">Calories:</label>
+    <input type="number" id="calories" class="form-control" placeholder="Set kcal">
+
+    <!-- Allergies checkbox containing most common allergies -->
+
+    <div class="form-group mt-3">
+        <label>Allergies:</label>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyEggs" value="eggs">
+                <label class="form-check-label" for="allergyEggs">Eggs</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyMilk" value="milk">
+                <label class="form-check-label" for="allergyMilk">Milk and Dairy</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyPeanuts" value="peanuts">
+                <label class="form-check-label" for="allergyPeanuts">Peanuts</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyTreeNuts" value="tree-nuts">
+                <label class="form-check-label" for="allergyTreeNuts">Tree Nuts</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyFish" value="fish">
+                <label class="form-check-label" for="allergyFish">Fish</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyShellfish" value="shellfish">
+                <label class="form-check-label" for="allergyShellfish">Shellfish</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergyWheat" value="wheat">
+                <label class="form-check-label" for="allergyWheat">Wheat</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergySoy" value="soy">
+                <label class="form-check-label" for="allergySoy">Soy</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allergySesame" value="sesame">
+                <label class="form-check-label" for="allergySesame">Sesame</label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label>Diets:</label>
+        <select id="diets" class="form-control">
+            <option value="">None</option>
+            <option value="low-fat">Low-Fat</option>
+            <option value="keto">Keto</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegitarian</option>
+            <option value="carnivore">Carnivore</option>
+        </select>
+    </div>
+</aside>
+
+<!-- Recipe Cards -->
+<div class="container mt-5">
+    <div id="recipeContainer" class="row"></div>
+    <div id="noResultsAlert" class="alert alert-warning d-none" role="alert">No recipes found!</div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
