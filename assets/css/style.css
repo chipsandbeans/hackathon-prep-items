@@ -8,3 +8,64 @@ body {
     color: black;
     border: solid 1.5px black;
 }
+
+#searchButton:hover {
+    background-color: azure;
+    color: black;
+}
+
+.navbar {
+    background-color: #fbdc43;
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.navbar .nav-link {
+    color: black !important; /* Changes the text color of the navbar links */
+}
+
+.navbar-toggler {
+    border-color: transparent; /* Remove default border */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.navbar-toggler-icon::before {
+    content: '';
+    display: block;
+    width: 30px; /* Adjust width */
+    height: 3px; /* Adjust height */
+    background-color: black; /* Set color to black */
+    position: relative;
+}
+
+.navbar-toggler-icon::after {
+    content: '';
+    display: block;
+    width: 30px; /* Adjust width */
+    height: 3px; /* Adjust height */
+    background-color: black; /* Set color to black */
+    position: relative;
+    margin-top: 5px; /* Space between lines */
+}
+
+.dropdown-menu {
+    background-color: white; /* Ensures dropdown background is white for contrast */
+}
+
+.dropdown-item {
+    color: black; /* Changes the color of dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: lightgray; /* Optional: Adds hover effect for better UX */
+}
